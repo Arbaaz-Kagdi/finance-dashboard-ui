@@ -1,0 +1,128 @@
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.controls-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .controls-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 400px;
+  position: relative;
+}
+
+.search-box svg {
+  position: absolute;
+  left: 1rem;
+  pointer-events: none;
+}
+
+.search-box input {
+  padding-left: 2.75rem;
+  width: 100%;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  padding: 0 0.75rem;
+}
+
+.select-base {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  padding: 0.625rem 0.5rem;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+.select-base option {
+  background-color: var(--surface-color);
+  color: var(--text-primary);
+}
+
+.table-container {
+  overflow-x: auto;
+  padding: 0;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.transactions-table th {
+  background-color: var(--glass-bg);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  position: sticky;
+  top: 0;
+}
+
+.transactions-table tr:last-child td {
+  border-bottom: none;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: var(--primary-light);
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--glass-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-success { color: var(--success-color) !important; font-weight: 600; }
+.text-danger { color: var(--danger-color) !important; font-weight: 600; }
+.text-center { text-align: center; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
