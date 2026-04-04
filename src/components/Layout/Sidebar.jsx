@@ -16,7 +16,7 @@ const Sidebar = ({ currentView, setCurrentView }) => {
           onMouseOut={(e) => e.currentTarget.style.opacity = '1'}
         >
           <PieChart className="brand-icon" size={28} />
-          <h2>FinDash</h2>
+          <h2>FinanceDashboard</h2>
         </div>
 
         <nav className="sidebar-nav">
@@ -57,7 +57,7 @@ const Sidebar = ({ currentView, setCurrentView }) => {
             
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                <p style={{ marginBottom: '0.5rem' }}>
-                 Welcome to FinDash! Here is a quick guide to navigating the dashboard:
+                 Welcome to FinanceDashboard! Here is a quick guide to navigating the dashboard:
                </p>
                
                <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
