@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-const COLORS = ['#6366f1', '#ef4444', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899', '#14b8a6'];
+const COLORS = ['indigo', 'red', 'orange', 'mediumseagreen', 'dodgerblue', 'mediumpurple', 'hotpink', 'lightseagreen'];
 
 const SpendingChart = ({ transactions }) => {
   const data = useMemo(() => {

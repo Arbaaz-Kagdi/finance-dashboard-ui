@@ -11,7 +11,7 @@
   --border-color: hsl(214, 32%, 91%);
   
   --primary-color: hsl(248, 90%, 66%);
-  /* #6366f1 - Indigo */
+  /* indigo */
   --primary-hover: hsl(248, 90%, 56%);
   --primary-light: hsla(248, 90%, 66%, 0.1);
 
@@ -146,7 +146,7 @@ p {
 
 .btn-primary {
   background-color: var(--primary-color);
-  color: #ffffff;
+  color: white;
 }
 .btn-primary:hover {
   background-color: var(--primary-hover);

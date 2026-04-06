@@ -59,7 +59,7 @@ const Header = ({ theme, toggleTheme, role, toggleRole, currentView, roleChanged
           <div className="divider"></div>
 
           {/* Theme Toggler */}
-          <button className="btn-icon" onClick={toggleTheme} style={{ color: 'white' }}>
+          <button className="btn-icon" onClick={toggleTheme}>
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
 
